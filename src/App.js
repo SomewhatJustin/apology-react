@@ -27,7 +27,7 @@ function App() {
         />}
       <br />
       {isResponseShown && <Response response={response} />}
-      {isLoading && <Loading />}
+      {isLoading && <Loading isLoading={isLoading} />}
     </main>
   );
 }

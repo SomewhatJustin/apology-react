@@ -33,7 +33,7 @@ export default function Form(props) {
     <form onSubmit={handleSubmit}>
       <label htmlFor="my-sin"></label>
       <input type="text" name="my-sin" onChange={handleChange} value={props.myCrime} ref={inputEl}></input>
-      <input type="submit" value="Fess up, bud" />
+      <input type="submit" value="Send in my confession" />
     </form>
   )
 }

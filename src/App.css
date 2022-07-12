@@ -50,3 +50,9 @@ form input[type=submit] {
 .response-container p {
   font-size: 1.2rem;
 }
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
