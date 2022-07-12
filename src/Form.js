@@ -19,6 +19,7 @@ export default function Form(props) {
   async function getResponse() {
     const response = await getApology(props.myCrime)
     props.setResponse(response)
+    props.setIsResponseShown(true)
     return response
   }
 
