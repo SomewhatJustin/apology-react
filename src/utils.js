@@ -16,7 +16,7 @@ async function getApology(myCrime) {
     max_tokens: 4000,
   });
 
-  return response.data.choices[0].text
+  return response.data.choices[0].text.substring(2)
 }
 
 export { getApology }

@@ -11,6 +11,7 @@ export default function Form(props) {
   }, [])
 
   const handleSubmit = (event) => {
+    props.setIsLoading(true)
     event.preventDefault()
     getResponse()
     // console.log(event.target[0].value)
@@ -20,6 +21,7 @@ export default function Form(props) {
     const response = await getApology(props.myCrime)
     props.setResponse(response)
     props.setIsResponseShown(true)
+    props.setIsLoading(false)
     return response
   }
 
