@@ -33,6 +33,16 @@ form input[type=text]:focus {
   /* Opera/IE 8+ */
 }
 
+form input[type=text].warning,
+form input[type=text]:focus.warning {
+  background: yellow;
+}
+
+form input[type=text].error,
+form input[type=text]:focus.error {
+  background: red;
+}
+
 form input[type=submit] {
   border: none;
   background: #027aff;
@@ -41,7 +51,6 @@ form input[type=submit] {
   border-radius: 7px;
   font-weight: 700;
 }
-
 
 .response-container {
   white-space: pre-wrap;
@@ -55,4 +64,8 @@ form input[type=submit] {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }
